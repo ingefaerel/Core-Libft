@@ -16,7 +16,7 @@
 - [ ] ft_strtrim
 - [ ] ft_strsplit
 - [ ] ft_itoa
-- [ ] ft_putchar
+- [x] ft_putchar
 - [ ] ft_putstr
 - [ ] ft_putstr
 - [ ] ft_putendl
