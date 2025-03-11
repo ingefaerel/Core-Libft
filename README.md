@@ -12,7 +12,7 @@
 - [ ] ft_strmapi
 - [ ] ft_strnequ
 - [ ] ft_strsub
-- [ ] ft_strjoin
+- [x] ft_strjoin
 - [ ] ft_strtrim
 - [ ] ft_strsplit
 - [ ] ft_itoa
@@ -38,7 +38,7 @@
 - [ ] ft_strmapi
 - [ ] ft_strnequ
 - [ ] ft_strsub
-- [ ] ft_strjoin
+- [x] ft_strjoin
 - [ ] ft_strtrim
 - [ ] ft_strsplit
 - [ ] ft_itoa
