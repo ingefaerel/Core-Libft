@@ -21,6 +21,8 @@ char ft_putchar_test(char c)
 
     fclose(fptr);
 
+    freopen("/dev/tty", "w", stdout);
+
     fptr = fopen("output.txt", "r");
     
     if (!fptr)
@@ -36,15 +38,9 @@ char ft_putchar_test(char c)
 }
 int main() {
   
-    //assert(ft_putchar_test('c') == 'c');
+    assert(ft_putchar_test('c') == 'c');
 
-    //printf("passed\n");
-    char result = ft_putchar_test('c');
-    
-    if (result == 'c')
-        printf("passed\n"); // Ensure it prints something
-    else
-        printf("failed: got '%c' instead of 'c'\n", result);
-    
+    printf("passed\n");
+
     return 0;
 }
