@@ -22,8 +22,9 @@ int test_strnew(size_t size)
         // printf("%d\n", str[i]);
         i++;
     }
-    if (!is_null)
-        printf("error: some char is not 0");
+    //if (!is_null)
+    //    printf("error: some char is not 0");
+    assert(is_nul != 0);
 
     free(str); 
     return (i);
