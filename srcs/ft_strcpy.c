@@ -6,11 +6,11 @@
 /*   By: emustafi <elmiramust2010@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/14 20:09:05 by emustafi          #+#    #+#             */
-/*   Updated: 2025/03/14 20:20:59 by emustafi         ###   ########.fr       */
+/*   Updated: 2025/03/15 11:58:01 by emustafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*strcpy(char *dst, const char *src)
+char	*ft_strcpy(char *dst, const char *src)
 {
 	int	i;
 
