@@ -1,30 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emustafi <elmiramust2010@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/12 16:10:15 by emustafi          #+#    #+#             */
-/*   Updated: 2025/04/06 17:00:43 by emustafi         ###   ########.fr       */
+/*   Created: 2025/04/04 11:02:20 by emustafi          #+#    #+#             */
+/*   Updated: 2025/04/06 17:00:05 by emustafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <stddef.h>
 
-char	*ft_strnew(size_t size)
+char	*ft_strncpy(char *dst, const char *src, size_t sz)
 {
-	char	*str;
 	size_t	i;
 
 	i = 0;
-	str = (char *)malloc(size + 1);
-	if (!str)
-		return (NULL);
-	while (i <= size)
+	while (i < sz && src[i])
 	{
-		str[i] = '\0';
+		dst[i] = src[i];
 		i++;
 	}
-	return (str);
+	while (i < sz)
+	{
+		dst[i] = '\0';
+		i++;
+	}
+	return (dst);
 }
